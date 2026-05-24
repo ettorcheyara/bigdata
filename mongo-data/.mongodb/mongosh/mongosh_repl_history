@@ -1,0 +1,94 @@
+exit
+rs.status() 
+exit
+rs.status()
+exit
+rs.status() 
+rs.status()
+rs.initiate({ _id: "rs0", members: [ { _id: 0, host: "mongo:27017" }, { _id: 1, host: "mongo2:27017" }, { _id: 2, host: "mongo3:27017" }] })
+conn.getDB("admin").runCommand({ ping: 1 })
+db.getSiblingDB("admin").runCommand({ ping: 1 })
+exit
+rs.initiate({ _id: "rs0", members: [ { _id: 0, host: "mongo:27017" }, { _id: 1, host: "mongo2:27017" }, { _id: 2, host: "mongo3:27017" }] })
+exit
+rs.status()
+rs.initiate({ _id: "rs0", members: [ { _id: 0, host: "mongo:27017" }, { _id: 1, host: "mongo2:27017" }, { _id: 2, host: "mongo3:27017" }] })
+exit
+rs.status() 
+rs.initiate({ _id: "rs0", members: [ { _id: 0, host: "mongo:27017" }, { _id: 1, host: "mongo2:27017" }, { _id: 2, host: "mongo3:27017" }] })
+exit
+rs.status()
+rs.status() 
+rs.initiate({ _id: "rs0", members: [ { _id: 0, host: "mongo:27017" }, { _id: 1, host: "mongo2:27017" }, { _id: 2, host: "mongo3:27017" }] })
+show collections
+use learntrack
+rs.status()
+rs.initiate()
+db.dropDatabase() 
+db.getCollectionNames().forEach(c => db[c].drop())
+show collections 
+use learntrack 
+exit
+show collections 
+db.getCollectionNames().forEach(c => db[c].drop())
+show collections 
+db.getCollectionNames().forEach(c => db[c].drop())
+show collections 
+use learntrack 
+show collections
+db.getCollectionNames().forEach(c => db[c].drop())
+show collections
+use learntrack
+db.activities.find().pretty()
+db.students.find().pretty()
+show collections 
+use learntrack
+exit
+apache/spark:3.5.3
+-v "C:/master2smstr1/bigdata/LearnTrack-BigData/ivy2:/root/.ivy2" ^
+-v "C:/master2smstr1/bigdata/LearnTrack-BigData:/app" ^
+-p 7077:7077 -p 8080:8080 ^
+docker run -d --name spark-master ^
+show collections 
+use learntrack
+show dbs
+show collections 
+use LearnTrack
+show collections 
+show collections
+use learntrack
+exit
+show collections
+show collection
+use learntrack
+show dbs
+exit
+show collections
+db.activities.find().pretty()
+show collections
+use learntack
+show dbs
+exit
+show tables
+show collections
+use learntack
+exit
+show collections
+show tables
+show collections
+db.activities.find().pretty()
+show tables
+show collections
+use learntack
+show dbs
+show collections
+  /app/spark/batch/daily_reports.py
+  --conf spark.jars.ivy=/ivy2 \
+  --packages org.mongodb.spark:mongo-spark-connector_2.12:10.3.0 \
+  --master spark://spark-master:7077 \
+/opt/spark/bin/spark-submit \
+show collections
+db.activities.find().pretty()
+db.students.find().pretty() 
+show collections
+use learntracktrackckrntracktrackcktrackck
